@@ -12,9 +12,19 @@ https://justv23.deviantart.com/art/Ganymede-543279390
 * Orbital period: 7.15455296 d
 * Rotational period: 7.15455296 d
 
+https://writerswrite.co.za/3-ways-to-use-inverted-dialogue-in-your-story/
+
+## 3 Inverted Dialogue
+
+### 1. No laughing matter
+
+"Welcome to Outpost 86, the Gem of Ganymede, the most captivating settlement in the Solar System!
+
+I am Mayor Maynard, and I personally guarantee you that you won't leave this place disappointed!"
+
 https://writerswrite.co.za/10-cliffhangers-that-make-readers-turn-the-page/
 
-## 10. Cliffhangers
+## 10 Cliffhangers
 
 ### 1. An Unanswered Question
 
