@@ -12,17 +12,26 @@ https://justv23.deviantart.com/art/Ganymede-543279390
 * Orbital period: 7.15455296 d
 * Rotational period: 7.15455296 d
 
-https://writerswrite.co.za/3-ways-to-use-inverted-dialogue-in-your-story/
-
 ## 3 Inverted Dialogue
 
 ### 1. No laughing matter
 
-"Welcome to Outpost 86, the Gem of Ganymede, the most captivating settlement in the Solar System!
+Repeat the same words after their meaning or tone has been changed.
 
-I am Mayor Maynard, and I personally guarantee you that you won't leave this place disappointed!"
+"Welcome to Outpost 86, the Gem of Ganymede, the most captivating settlement in the Solar System! I am Mayor Maynard, and I personally guarantee you that you won't leave this place disappointed!"
 
-https://writerswrite.co.za/10-cliffhangers-that-make-readers-turn-the-page/
+### 2. Turning the tables
+
+Turn somebody's words on him.
+
+"Anyone can be a monster in disguise."
+
+### 3. Trapped in a stasis
+Repeat the same words even if they are not true anymore.
+
+"We have captured their leader and we are about to deal with the rest of them any minute now. We will be able to lift the quarantine sooner than you think."
+
+https://writerswrite.co.za/3-ways-to-use-inverted-dialogue-in-your-story/
 
 ## 10 Cliffhangers
 
@@ -48,3 +57,4 @@ Show something important but unreachable.
 
 * "Leave me alone! I need some time to think through this mess."
 
+https://writerswrite.co.za/10-cliffhangers-that-make-readers-turn-the-page/
