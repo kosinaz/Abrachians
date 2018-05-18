@@ -12,6 +12,34 @@ https://justv23.deviantart.com/art/Ganymede-543279390
 * Orbital period: 7.15455296 d
 * Rotational period: 7.15455296 d
 
+## Roles
+
+### Colonists
+
+#### Colonial militia
+
+Visits colonists time to time to keep the abrachians away from them.
+
+#### Security guard
+
+Keeps watching colonists via security cameras to see who visits them.
+
+Always looking for camera parts to cameras broken by abrachians.
+
+### Doctor
+
+Visits sleeping colonists to gather samples and determine who is human and who is abrachian.
+
+Always looking for lab equipment to perform the research.
+
+### Abrachians
+
+#### Poacher
+
+Visits colonists time to time to see if they are alone and uses a shrink ray gun to kidnap them.
+
+Always looking for shrink crystals to reload the ray gun.
+
 ## 3 Inverted Dialogue
 
 ### 1. No laughing matter
