@@ -1,9 +1,14 @@
 # Abrachians: Monsters from Outer Space
-Made for #dreamhackaustinjam and #AdvJam2018.
 
-http://jams.gamejolt.io/advjam2018/games
+A raypunk social deduction game.
 
-http://jams.gamejolt.io/dreamhackaustinjam
+Planned to be made for #dreamhackaustinjam and #AdvJam2018, but stuck at the idea phase.
+
+Abrachia: From Ancient Greek ἀ- (a-, “not”) + βραχίων (brakhíōn, “arms”). (medicine) The congenital absence of both arms.
+
+Art-style: Streamline Moderne and Flash Gordon comics
+
+https://en.wikipedia.org/wiki/Flash_Gordon#/media/File:Flash_Gordon_Strange_Adventures_December_1936.jpg
 
 https://justv23.deviantart.com/art/Ganymede-543279390
 ## Ganymede
