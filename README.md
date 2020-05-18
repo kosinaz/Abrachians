@@ -4,35 +4,11 @@
 
 Ruby Ray and the Moon of Morphing Monsters is a raypunk visual novel about a space detective who has to stop the hidden invasion on Ganymede.
 
-You are Ruby Ray, the sensational space detective who found herself trapped in City X of Ganymede due to a citywide quarantine meant to prevent the escape of the shapeshifting monsters lurking among the locals. You can leave the moon only by finding the monsters before they find you.
+You are Ruby Ray, the sensational space detective who found herself trapped in City X of Ganymede due to a quarantine meant to prevent the escape of the shapeshifting monsters lurking among the locals. You can leave the moon only by finding the monsters before they find you.
 
 ## Roles
 
-### Colonists
 
-#### Colonial militia
-
-Visits colonists time to time to keep the abrachians away from them.
-
-#### Security guard
-
-Keeps watching colonists via security cameras to see who visits them.
-
-Always looking for camera parts to cameras broken by abrachians.
-
-### Doctor
-
-Visits sleeping colonists to gather samples and determine who is human and who is abrachian.
-
-Always looking for lab equipment to perform the research.
-
-### Abrachians
-
-#### Poacher
-
-Visits colonists time to time to see if they are alone and uses a shrink ray gun to kidnap them.
-
-Always looking for shrink crystals to reload the ray gun.
 
 ## 3 Inverted Dialogue
 
@@ -40,7 +16,7 @@ Always looking for shrink crystals to reload the ray gun.
 
 Repeat the same words after their meaning or tone has been changed.
 
-"Welcome to Outpost 86, the Gem of Ganymede, the most captivating settlement in the Solar System! I am Mayor Maynard, and I personally guarantee you that you won't leave this place disappointed!"
+"Welcome to City X, the Gem of Ganymede, the most captivating settlement in the Solar System! I am Mayor Maynard, and I guarantee you won't leave this place disappointed!"
 
 ### 2. Turning the tables
 
@@ -61,22 +37,21 @@ https://writerswrite.co.za/3-ways-to-use-inverted-dialogue-in-your-story/
 
 Ask a question and don't answer it.
 
-* "Before I answer I need to know that I can trust you."
-* "You'll know the answer once you get there."
-* "Acces Denied. Level 3 Security Clearance Required."
+* "Who saved me?"
+* "Who visited the victim?"
 
 ### 2. A Loss
 
 Take away a tangible thing or relationship of vital importance.
 
 * "All channels of interplanetary communication have been suspended to prevent mass hysteria."
-* "The entire moon is under strict quarantine. No spacecraft can enter or leave for an uncertain period of time."
-* "Dr Banaszak disappeared. He was the only one who could tell who is human and who isn't."
+* "The entire moon is under strict quarantine."
 
 ### 3. Dangle A Carrot
 
 Show something important but unreachable.
 
-* "Leave me alone! I need some time to think through this mess."
+* "I know someone who may have seen who visited him last night, but even you could have been the visitor, so I won't tell you anything."
+* "The Mayor receives no one until the quarantine is lifted."
 
 https://writerswrite.co.za/10-cliffhangers-that-make-readers-turn-the-page/
