@@ -1,21 +1,13 @@
-# Abrachians: Monsters from Outer Space
+# Ruby Ray and the Moon of Morphing Monsters
 
-A raypunk social deduction game.
+A raypunk visual novel.
 
 Planned to be made for #dreamhackaustinjam and #AdvJam2018, but stuck at the idea phase.
 
 Abrachia: From Ancient Greek ἀ- (a-, “not”) + βραχίων (brakhíōn, “arms”). (medicine) The congenital absence of both arms.
 
-Art-style: Streamline Moderne and Flash Gordon comics
-
-https://en.wikipedia.org/wiki/Flash_Gordon#/media/File:Flash_Gordon_Strange_Adventures_December_1936.jpg
-
 https://justv23.deviantart.com/art/Ganymede-543279390
 ## Ganymede
-* Surface area: 8.72×107 km2 (0.171 Earths)
-* Surface gravity: 1.428 m/s2 (0.146 g)
-* Orbital period: 7.15455296 d
-* Rotational period: 7.15455296 d
 
 ## Roles
 
