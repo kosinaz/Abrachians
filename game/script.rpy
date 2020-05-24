@@ -3,11 +3,15 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define r = Character("Ruby Ray", image="ruby")
+define r = Character("Ruby Ray")
 
-define p = Character("Phil Phaser", image="phil")
+define p = Character("Phil Phaser")
 
-define a = Character("Arthur", image="arthur")
+define a = Character("Arthur")
+
+transform place (n):
+    xalign 1.0 / 6.0 * n
+    yalign 1.0
 
 # The game starts here.
 
@@ -116,6 +120,24 @@ label start:
     show ruby room at left
 
     r "A new day. A new chance to survive..."
+
+    scene bg lobby
+
+    show ruby inside at left
+
+    show duke at place (1)
+
+    show cindy at place (5)
+
+    show erica at place (2)
+
+    show ben at place (4)
+
+    show arthur at place (3)
+
+    show phil unarmed at right
+
+    r "Nice..."
 
     # This ends the game.
 

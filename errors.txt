@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 29: expected statement.
-    r in "Here we are. On Ganymede. In the middle of nowhere. Far away from the city, as you wanted."
-      ^
+File "game/script.rpy", line 12: expected statement.
+    atl_transform ::=  "transform" place "(" parameters ")" ":"
+                  ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri May 22 18:20:07 2020
+Sun May 24 13:33:26 2020
