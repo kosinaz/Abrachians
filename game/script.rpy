@@ -117,7 +117,7 @@ label start:
 
     "Next morning..."
 
-    show ruby room at left
+    show ruby inside at left
 
     r "A new day. A new chance to survive..."
 
@@ -127,15 +127,15 @@ label start:
 
     show duke at place (1)
 
-    show cindy at place (5)
+    show erica at place (5)
 
-    show erica at place (2)
+    show cindy at place (2)
 
     show ben at place (4)
 
     show arthur at place (3)
 
-    show phil unarmed at right
+    show phil inside at right
 
     r "Nice..."
 
