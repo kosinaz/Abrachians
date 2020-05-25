@@ -65,9 +65,9 @@ label start:
 
     show cindy at place(2)
 
-    c "Arthur! What happened? Who are these people?"
+    c "Arthur! What happened? Who are these people? Are they members of the militia? Is the quarantine finally over?"
 
-    a "New guests. They say the front door was open."
+    a "No, Cindy, still no news from the mayor. It seems they are just two strangers who have wandered into our hotel. They say the front door was open."
 
     c "But it's locked. I just went there to check it."
 
