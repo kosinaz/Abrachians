@@ -9,6 +9,8 @@ define p = Character("Phil Phaser")
 
 define a = Character("Arthur")
 
+define c = Character("Cindy")
+
 transform place (n):
     xalign 1.0 / 6.0 * n
     yalign 1.0
@@ -31,33 +33,17 @@ label start:
 
     # These display lines of dialogue.
 
-    r "Here we are. On Ganymede. Far away from the city, as you wanted."
+    r "Oh, hello, beautiful Ganymede! We just came to find out why nobody is responding to our calls from your City X. I hope you don't mind."
 
     show phil outside at right
 
-    p "Call me a madman, but I still have bad feeling about this. I'll bring my gun, just to be sure."
+    p "Yeah, keep joking, but I still have a bad feeling about this. Look, there is no traffic around the city and no movement at all."
 
-    r "Who would have thought?"
-
-    p "What?"
-
-    r "Nothing. Let's get going. Thanks to you we have a long walk ahead of us."
-
-    scene bg city
-
-    show phil inside at right
-
-    p "See? I told you! Something happened here. The city is empty. Everyone is gone."
-
-    show ruby inside at left
-
-    r "Calm down! Maybe they are just on a large gathering or something."
-
-    p "Yeah, sure..."
-
-    r "Look! Hotel Quantum. I bet we'll find someone there who can explain what is going on."
+    r "Ok, you are right, that's odd. Let's check what's going on here."
 
     scene bg lobby
+
+    "They found nobody on the streets, so they decided to enter the first building they saw, Hotel Quantum."
     
     show phil inside at right
 
@@ -67,63 +53,23 @@ label start:
     
     r "Wait! Someone is coming."
 
-    show arthur
+    show arthur at place(3)
     
-    a "Oh! New guests? Or the same old ones with new faces? Should I introduce myself or just let you shoot me down?"
+    a "Oh! Intruders? Monsters or saviors?"
 
-    r "Why would we shoot you down? And where is everybody?"
+    r "Monsters? What monsters?"
 
-    a "Ah, so you really are new guests. Poor souls. At the wrong time in the wrong place."
+    a "A bunch of shapeshifting monsters attacked the city a few days ago. The mayor ordered strict quarantine while the militia mitigates the problem. His last message was to close all doors and not let anyone in until his next instruction. I'm afraid you're not here to bring the long-awaited good news."
 
-    p "I told you! I told you! We are doomed!"
+    r "The front door was wide open..."
 
-    r "Phil, calm down already, and let him explain what is going on."
+    show cindy at place(2)
 
-    a "An invasion. That's what going on. Monsters from outer space diguised as decent human beings are decimating the population."
+    c "Arthur! What happened? Who are these people?"
 
-    p "Then where is the resistance? Who is fighting this war?"
+    a "New guests. They say the front door was open."
 
-    a "They are nowhere. We are alone. Locked up in this hotel, and in all the other houses."
-
-    r "Um... I mean, nothing has stopped us to come in. The city gates and the doors of the hotel were wide open."
-
-    a "Hah, great. Your friend was right, we are doomed. Only the manager had a key to the front door. If the door is open, then they took it from him. So they are here. We are doomed."
-
-    p "Not me! I'm leaving! I don't trust you. You can be one of them. Don't even try to follow me. I have a gun, and I'm not afraid to use it."
-
-    hide phil
-
-    r "Phil, don't be a kid!"
-
-    show phil inside at right
-
-    p "The door is locked!"
-
-    a "Hah, told you. They are here. And you two fell into their trap for good."
-
-    p "No! Never! There has to be a way out. And I'll find it."
-
-    hide phil
-
-    a "Well, good luck! And you, young lady, feel free to find yourself a room! At least you can spend your last days comfortable."
-
-    r "Thank you, I guess."
-
-    a "You are welcome. Tomorrow morning I'll hold a meeting here in the lobby with all the guests and inform them about the new situation. You should come as well. If you are still able to."
-
-    r "I'll be here."
-
-    scene bg room
-
-    "Next morning..."
-
-    show ruby inside at left
-
-    r "A new day. A new chance to survive..."
-
-    scene bg lobby
-
-    show ruby inside at left
+    c "But it's locked. I just went there to check it."
 
     show duke at place (1)
 
@@ -132,8 +78,6 @@ label start:
     show cindy at place (2)
 
     show ben at place (4)
-
-    show arthur at place (3)
 
     show phil inside at right
 
