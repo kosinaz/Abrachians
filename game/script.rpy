@@ -81,6 +81,7 @@ label start:
 
     show phil inside at right
 
+    a "One of you stole my key, opened the door, let these newcomers in, then locked it again. I don't know if this was supposed to be a bad joke, or a horrible act of a madman, but I highly doubt you would reveal yourself. So now we are here, not knowing what happened, and there is a chance that a monster also sneaked in and pretends to be one of us.
     r "Nice..."
 
     # This ends the game.
