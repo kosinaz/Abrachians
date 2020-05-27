@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 12: expected statement.
-    atl_transform ::=  "transform" place "(" parameters ")" ":"
-                  ^
+File "game/script.rpy", line 110: expected statement.
+    e
+     ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun May 24 13:33:26 2020
+Wed May 27 15:36:44 2020
