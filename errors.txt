@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 110: expected statement.
-    e
-     ^
+File "game/script.rpy", line 277: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Erika has the key! She is either the monster or the one who let in the monster."
+                                                                                     ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed May 27 15:36:44 2020
+Wed May 27 22:36:16 2020

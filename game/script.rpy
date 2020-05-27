@@ -15,11 +15,15 @@ define c = Character("Cindy")
 
 define d = Character("Duke")
 
-define e = Character("Erica")
+define e = Character("Erika")
 
 transform place (n):
     xalign 1.0 / 6.0 * n
     yalign 1.0
+
+image bg room flip = im.Flip("bg room.png", horizontal = True)
+
+default target = "Arthur"
 
 # The game starts here.
 
@@ -87,7 +91,7 @@ label start:
 
     show duke at place (1)
 
-    show erica at place (5)
+    show erika at place (5)
 
     show cindy at place (2)
 
@@ -99,7 +103,7 @@ label start:
 
     with fade
 
-    a "Let’s quickly get past introducing each other. The new guests there are Ruby and Phil, and the old ones here are Erica and Ben on my left and Cindy and Duke on my right. Now that everyone knows each other, let me explain why I called you here."
+    a "Let’s quickly get past introducing each other. The new guests there are Ruby and Phil, and the old ones here are Erika and Ben on my left and Cindy and Duke on my right. Now that everyone knows each other, let me explain why I called you here."
 
     a "One of you stole my key, opened the door, let these in, then locked it again. I don't know if this was supposed to be a bad joke, or a horrible act of a madman, but I highly doubt you would reveal yourself. Still, I give it a try."
 
@@ -117,7 +121,7 @@ label start:
 
     hide duke
 
-    hide erica
+    hide erika
 
     hide cindy
     
@@ -143,9 +147,169 @@ label start:
 
     show phil inside at right
 
-    r "Nice try, Phil. But a shapeshifting monster is far from enough to let you sleep in my room."
+    r "Nice try, Phil. But a shapeshifting monster is far from enough for me to let you sleep in my room."
 
     p "Fine. You didn't want to sleep anyway, did you? So who do you want to check first?"
+
+    menu:
+
+      "Arthur":
+
+        $ target = "Arthur"
+
+        jump reaction
+
+      "Ben":
+
+        $ target = "Ben"
+
+        jump reaction
+
+      "Cindy":
+
+        $ target = "Cindy"
+
+        jump reaction
+
+      "Duke":
+
+        $ target = "Duke"
+
+        jump reaction
+
+      "Erika":
+
+        $ target = "Erika"
+
+        jump reaction
+
+    label reaction:
+
+      if target == "Cindy":
+
+        p "Ok, then I will check Duke."
+
+      else:
+ 
+        p "Ok, then I will check Cindy."
+
+      scene bg room flip
+
+      show ruby inside at left
+
+      r "[target] left and didn't even lock the door. Let's have a quick look around! Maybe I can find something interesting."
+
+      if target == "Arthur":
+
+        r "A top secret document hidden under the bed about the Zeta-7 crystal locator optimized for locating Abrachian shrink ray crystals. Weird."
+
+      elif target == "Ben":
+
+        r "A few strange crystals behind the toilet. They are covered with a special casing that makes them suitable for loading into a ray gun. Ben is up to no good!"
+
+      elif target == "Cindy":
+
+        r "A few strange crystals behind the toilet. They are covered with a special casing that makes them suitable for loading into a ray gun. Cindy is up to no good!"
+
+      elif target == "Duke":
+
+        r "A set of chemical apparatus hidden behind the mirror. They are still wet. He must have used it not long ago. But for what?"
+
+      elif target == "Erika":
+
+        r "The key to the front door hidden under the door mat! How original!? So Erika was the thief!"
+
+      scene bg room
+
+      show ruby inside at left
+
+      r "Woah, this was close. I'm glad that nobody saw me. Maybe I should get some sleep then continue the investigation tomorrow."
+
+      scene bg room
+
+      show ruby inside at left
+
+      with fade
+
+      "Oh, a message from Arthur, that we should all meet in the lobby. Let's what he has to say to us!"
+
+      scene bg lobby
+
+      show ruby inside at left
+
+      show erika at place (5)
+
+      show cindy at place (2)
+
+      show ben at place (4)
+
+      show arthur at place(3)
+
+      show phil inside at right
+
+      a "I have bad news and good news. Duke disappeared, but I think I found the culprit. Cindy, my dear, what have you done?"
+
+      if target != "Cindy":
+
+        p "She was with me. Almost the whole day."
+
+        c "What? You were the one who kidnapped and interrogated me? But why?"
+
+        p "I wanted to know if you are clean. And now it seems you definitely are."
+
+        a "Then why did I found shrink ray crystals in your room?"
+
+        c "I don't even know what you are talking about."
+
+        r "What has the crystals got to do with the monster?"
+
+        a "The shapeshifting monsters are not killing anybody, but they are using shrink ray guns to kidnap and enslave people."
+
+        p "Then maybe the monster tried to frame Cindy, but luckily I took care of her."
+
+        a "Either that or you are also lying. Maybe there are more than one monsters in this hotel. Unfortunately we cannot know for sure. Unless someone else saw something."
+
+        if target == "Ben":
+
+          menu:
+
+            "Ben also has some crystals. He is either the framer or also got framed, but I find this quite unlikely.":
+              
+              jump benrevealed
+
+            "Nothing.":
+
+              jump benhidden
+
+        elif target == "Erika":
+
+          menu:
+
+            "Erika has the key! She is either the monster or the one who let in the monster.":
+
+              jump erikarevealed
+
+            "Nothing.":
+
+              jump erikahidden
+
+      else:
+
+        c "I did nothing! I have no idea where is Duke."
+
+        a "Then why did I found shrink ray crystals in your room?"
+
+        c "I don't even know what you are talking about."
+
+        r "What has the crystals got to do with the monster?"
+
+        a "The shapeshifting monsters are not killing anybody, but they are using shrink ray guns to kidnap and enslave people."
+
+        p "Well, if Cindy is a monster, we have to make sure that she can't hurt anyone else. I have a ray gun with which I can neutralize her for a week. If she is innocent, she is good to go afterwards. But if nobody else disappers..."
+
+        c "I see. I think that's the best I can do to prove my innocence."
+
+        p "You are a brave girl, Cindy. I promise it won't hurt."
 
     # This ends the game.
 
