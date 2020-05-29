@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 277: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Erika has the key! She is either the monster or the one who let in the monster."
-                                                                                     ^
+File "game/script.rpy", line 175: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
+    r "A top secret document hidden under the bed about the Zeta-7 crystal locator optimized for locating Abrachian shrink ray crystals. Weird."
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed May 27 22:36:16 2020
+Thu May 28 22:06:05 2020

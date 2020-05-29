@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 290, in script
-    jump erikarevealed
-ScriptError: could not find label 'erikarevealed'.
+  File "game/script.rpy", line 287, in script
+    jump benrevealed
+ScriptError: could not find label 'benrevealed'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 290, in script
-    jump erikarevealed
+  File "game/script.rpy", line 287, in script
+    jump benrevealed
   File "C:\Games\renpy\renpy-7.3.5-sdk\renpy\ast.py", line 1697, in execute
     rv = renpy.game.script.lookup(target)
   File "C:\Games\renpy\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'erikarevealed'.
+ScriptError: could not find label 'benrevealed'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 rrmmm 1.0
-Wed May 27 22:39:12 2020
+Thu May 28 16:08:13 2020
