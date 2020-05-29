@@ -30,9 +30,11 @@ transform place (n):
 
 image bg room flip = im.Flip("bg room.png", horizontal = True)
 
-# Set the variable that shows the player's target on the the current night.
+# Set the variable that shows the player's target on the given night.
 
-default target = "Arthur"
+default target1 = "Arthur"
+
+default target2 = "Arthur"
 
 # The game starts here.
 
@@ -164,23 +166,23 @@ label start:
 
     "Arthur":
 
-      $ target = "Arthur"
+      $ target1 = "Arthur"
 
     "Ben":
 
-      $ target = "Ben"
+      $ target1 = "Ben"
 
     "Cindy":
 
-      $ target = "Cindy"
+      $ target1 = "Cindy"
 
     "Duke":
 
-      $ target = "Duke"
+      $ target1 = "Duke"
 
     "Erika":
 
-      $ target = "Erika"
+      $ target1 = "Erika"
 
   scene bg room flip
 
@@ -190,23 +192,23 @@ label start:
 
   r "[target] left and didn't even lock the door. Let's have a quick look around! Maybe I can find something interesting."
 
-  if target == "Arthur":
+  if target1 == "Arthur":
 
     r "A top secret document hidden under the bed about the Zeta-7 crystal locator optimized for locating Abrachian shrink ray crystals. Weird."
 
-  elif target == "Ben":
+  if target1 == "Ben":
 
     r "A few strange crystals behind the toilet. They are covered with a special casing that makes them suitable for loading into a ray gun. Ben is up to no good!"
 
-  elif target == "Cindy":
+  if target1 == "Cindy":
 
     r "A few strange crystals behind the toilet. They are covered with a special casing that makes them suitable for loading into a ray gun. Cindy is up to no good!"
 
-  elif target == "Duke":
+  if target1 == "Duke":
 
     r "A set of chemical apparatus hidden behind the mirror. They are still wet. He must have used it not long ago. But for what?"
 
-  elif target == "Erika":
+  if target1 == "Erika":
 
     r "The key to the front door hidden under the door mat! How original!? So Erika was the thief!"
 
@@ -224,7 +226,7 @@ label start:
 
   with fade
 
-  "Oh, a message from Arthur that we should all meet in the lobby."
+  r "Oh, a message from Arthur that we should all meet in the lobby."
 
   scene bg lobby
 
@@ -266,7 +268,7 @@ label start:
 
   a "Either that or you are also lying. Maybe there are more than one monsters in this hotel. Unfortunately we cannot know for sure. Unless someone else saw something."
 
-  if target == "Ben":
+  if target1 == "Ben":
 
     menu:
 
@@ -276,19 +278,199 @@ label start:
 
       "Nothing.":
 
-        jump ben_hidden
+        jump day2
 
-  elif target == "Erika":
+  if target1 == "Erika":
 
     menu:
 
       "Erika has the key to the front door!":
 
-        jump erikarevealed
+        jump erika_revealed
 
       "Nothing.":
 
-        jump erikahidden
+        jump day2
+
+  jump day2
+
+label day2:
+
+  a "Nothing? Well, then once again I ask you to stay in your rooms. If Duke had taken my advice, he might still be with us. Enough said. Back to your rooms!"
+
+  scene bg room
+
+  show ruby inside at left
+
+  with fade
+
+  r "Wow, so we do have a monster! I have to find it before more people disappear. But who could it be?"
+
+  menu:
+
+    "Arthur":
+
+      $ target2 = "Arthur"
+
+    "Ben":
+
+      $ target2 = "Ben"
+
+    "Cindy":
+
+      $ target2 = "Cindy"
+
+    "Erika":
+
+      $ target2 = "Erika"
+
+  scene bg room flip
+
+  show ruby inside at left
+
+  with fade
+
+  if target2 == "Arthur":
+
+    if target1 == "Arthur":
+
+      r "Nothing new, just the document about the locator. I bet he has this locator and he used it to find the crystals in Cindy's room."
+
+    else:
+
+      r "A top secret document hidden under the bed about the Zeta-7 crystal locator optimized for locating Abrachian shrink ray crystals. I bet he has this locator and he used it to find the crystals in Cindy's room."
+
+  if target2 == "Ben":
+
+    if target1 == "Ben":
+
+      r "Just the same crystals behind the toilet, but this time a lot less, than last time. This can't be good!"
+
+    else: 
+
+      r "A few strange crystals behind the toilet. They are covered with a special casing that makes them suitable for loading into a ray gun. Ben is up to no good!"
+
+  if target2 == "Cindy":
+
+    if target1 == "Cindy":
+
+      r "Just the crystals, nothing else that would prove that she wasn't framed."
+
+    else:
+
+      r "Here they are, the crystals Arthur was talking about, but nothing else that would prove that she wasn't framed."
+
+  if target2 == "Erika":
+
+    if target1 == "Erika":
+
+      r "She still has the key, but no crystals that would show that she might be a monster."
+
+    else:
+
+      r "The key to the front door hidden under the door mat! How original!? So Erika was the thief!"
+
+  scene bg room
+
+  show ruby inside at left
+
+  with fade
+
+  r "Ok, another successful night without being caught, but I think I get some rest now."
+
+  scene bg room
+
+  show ruby inside at left
+
+  with fade
+
+  r "A message from Cindy, that we should meet in the lobby again."
+
+  scene bg lobby
+
+  show ruby inside at left
+
+  show erika at place (5)
+
+  show cindy at place (2)
+
+  show ben at place (4)
+
+  show phil inside at right
+
+  with fade
+
+  c "Arthur is gone! The monster caught him for sure. What should we do now? It can be any of us!"
+
+  p "No, not any of us. It's not you or me, because we were busy on the first night and Duke still disappeared. And it's also not Ben, because last night I kept him occupied."
+
+  b "Yes, it wasn't a pleasant experience I would say."
+
+  p "So it's Erika."
+
+  e "Puny human, I should have taken care of you instead of Arthur. Whatever, you will never catch me!
+
+  hide erika
+
+  p "Stop!"
+
+  hide phil
+
+  if target1 == "Ben" or target2 == "Ben":
+
+    r "Ben, come, let's help Phil! Cindy will be ok. Right Cindy?"
+
+    c "Sure, I guess."
+
+    b "O-ok."
+
+  else:
+
+    r "Ben, stay with Cindy, we'll take care of the monster."
+
+  scene bg room flip
+
+  show ruby inside at left
+
+  show phil inside at right
+
+  with fade
+
+  if target1 == "Ben" or target2 == "Ben":
+
+    show ben at place (1)
+
+  r "Did you catch her?"
+
+  p "Yes, she ran straight to her room. I used my gun to neutralize her. She won't cause any more trouble."
+
+  if target1 == "Ben" or target2 == "Ben":
+
+    jump ben_revealed2
+
+  r "Great, but we still need to find the others. They must be somewhere here in the hotel. I don't think Erika risked taking them outside."
+
+  p "Yes, but unfortunately, we can't ask her anymore."
+
+  r "Then let's not waste more time. I'll look for them in the rooms upstairs, you start downstairs."
+
+  scene bg room
+
+  show ruby inside at left
+
+  with fade
+
+  r "I can't belive we couldn't find them. We checked all the rooms."
+
+  if target1 == "Cindy" or target2 == "Cindy":
+
+    jump label ben_revealed3
+
+  scene bg room
+
+  show ruby inside at left
+
+  with fade
 
 label ben_revealed:
 
@@ -379,6 +561,172 @@ label ben_revealed:
   m "You left your door open. What a pity!"
 
   r "Wait!"
+
+  scene black
+
+  with fade
+
+  "The End"
+
+  # This ends the game.
+
+  return
+
+label ben_revealed2:
+
+  b "Oh, no! What have you done with her, dumb human?"
+
+  r "Hah, when I saw the crystals in you room, I knew that you are dirty. I'm glad that I bring you here."
+
+  p "Ok, buddy, where is Arthur and Duke? Talk, if you don't want to get to Erika's fate!"
+
+  b "You... you will shoot me down anyway, don't you?"
+
+  r "We are not monsters. If you tell us everything we want to know, maybe we'll accidentally throw you out on Callisto when we head home."
+
+  b "All right. Where should I start?"
+
+  r "In the beginning. How could you open the front door?"
+
+  b "We didn't. Ben and Erika gave up and decided to leave the hotel, the city, the moon. They stole Arthur's key, then left. We caught them a few minutes later. Our friends took them with them. They must be in one of our underground mines since then."
+  
+  b "The hotel's name was on the key, so we decided to take their place. We closed the door behind us, then saw you talking with Arthur. We had only one gun, so stood no chance against the three of you, so we went to our rooms instead. Cindy came just a few minutes later."
+
+  b "The first night I put some crystal in Cindy's room, just in case. It almost worked, but Phil messed it up for us. In the meantime, Erika shrank Duke, and locked him in the basement."
+  
+  b "The second night I couldn't do anything, again, because of Phil. And it seems Erika chose the wrong target. Arthur is also in the basement now. Here's the key. So... we are good?"
+
+  p "We are good, buddy. Now stay still, the next time you wake up, you will be on the spectacular Callisto."
+
+  b "Wait!"
+
+  scene bg lobby
+
+  show ruby inside at left
+
+  show duke at place (4)
+
+  show cindy at place (2)
+
+  show arthur at place(3)
+
+  show phil inside at right
+
+  with fade
+
+  a "Thank you very much for your help. I hope you will reach your rocket, before the monsters notice you. You are our only hope."
+
+  r "Don't worry Arthur! We are back with the army in a few days. The invasion will be stopped. See you soon!"
+
+  scene black
+
+  with fade
+
+  "The End"
+
+  # This ends the game.
+
+  return
+
+label ben_revealed3:
+
+  r "The only room I didn't check is Ben's. I have to give it a try."
+
+  scene bg room flip
+
+  show ruby inside at left
+
+  with fade
+
+  r "He is not here, maybe he is still with Cindy. I guess he won't mind if I look around a little."
+
+  r "Wait, he also has some crystals. Did Erika frame him too? Or is he a monster too? Well, if he is, it don't want to face him alone. I have to get Phil first."
+
+  scene bg room flip
+
+  show ruby inside at left
+
+  with fade
+
+  r "Phil, are you in here? Your door was wide open."
+
+  r "His clothes are on the floor but he is nowhere. So Ben is a monster! And he got him. Luckily, I know where Phil hides his gun."
+
+  r "There we go. Now, let's get Cindy, before it's too late."
+
+  scene bg room flip
+
+  show ruby inside at left
+
+  show cindy at right
+
+  with fade
+
+  c "Ruby! What a nice surprise!"
+
+  r "Lock the door! I'll stay with you tonight. Ben is also a monster and got rid of Phil, but he doesn't know that we already know this. Tomorrow we'll take care of him."
+
+  c "O-ok."
+
+  scene bg lobby
+
+  show ruby inside at left
+
+  show cindy at right
+
+  show ben at place(3)
+
+  with fade
+
+  r "Good morning, Ben!"
+
+  b "Good morning, ladies."
+
+  r "Ok, this was fun. Look, you forgot this gun in Phil's room, after you shot him. What a pity."
+
+  b "Oh... ooooh."
+
+  r "So talk, if you don't want to get to Erika's fate!"
+
+  b "You... you will shoot me down anyway, don't you?"
+
+  r "We are not monsters. If you tell us everything we want to know, maybe we'll accidentally throw you out on Callisto when we head home."
+
+  b "All right. Where should I start?"
+
+  r "In the beginning. How could you open the front door?"
+
+  b "We didn't. Ben and Erika gave up and decided to leave the hotel, the city, the moon. They stole Arthur's key, then left. We caught them a few minutes later. Our friends took them with them. They must be in one of our underground mines since then."
+  
+  b "The hotel's name was on the key, so we decided to take their place. We closed the door behind us, then saw you talking with Arthur. We had only one gun, so stood no chance against the three of you, so we went to our rooms instead. Cindy came just a few minutes later."
+
+  b "The first night I put some crystal in Cindy's room, just in case. It almost worked, but Phil messed it up for us. In the meantime, Erika shrank Duke, and locked him in the basement."
+  
+  b "The second night I couldn't do anything, again, because of Phil. And it seems Erika chose the wrong target. Arthur is also in the basement now.
+  
+  b "Then after Phil neutralized Erika, I took her shrink ray gun, and shrank Phil too. He joined the others in the basement. Here's the key. So... we are good?"
+
+  r "We are good. Now stay still, the next time you wake up, you will be on the spectacular Callisto."
+
+  b "Wait!"
+
+  scene bg lobby
+
+  show ruby inside at left
+
+  show duke at place (4)
+
+  show cindy at place (2)
+
+  show arthur at place(3)
+
+  show phil inside at right
+
+  with fade
+
+  a "Thank you very much for your help. I hope you will reach your rocket, before the monsters notice you. You are our only hope."
+
+  r "Don't worry Arthur! We are back with the army in a few days. The invasion will be stopped. See you soon!"
 
   scene black
 
