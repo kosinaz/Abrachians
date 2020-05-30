@@ -190,7 +190,7 @@ label start:
 
   with fade
 
-  r "[target] left and didn't even lock the door. Let's have a quick look around! Maybe I can find something interesting."
+  r "[target1] left and didn't even lock the door. Let's have a quick look around! Maybe I can find something interesting."
 
   if target1 == "Arthur":
 
@@ -408,7 +408,7 @@ label day2:
 
   p "So it's Erika."
 
-  e "Puny human, I should have taken care of you instead of Arthur. Whatever, you will never catch me!
+  e "Puny human, I should have taken care of you instead of Arthur. Whatever, you will never catch me!"
 
   hide erika
 
@@ -434,11 +434,11 @@ label day2:
 
   show phil inside at right
 
-  with fade
-
   if target1 == "Ben" or target2 == "Ben":
 
     show ben at place (1)
+
+  with fade
 
   r "Did you catch her?"
 
@@ -464,7 +464,7 @@ label day2:
 
   if target1 == "Cindy" or target2 == "Cindy":
 
-    jump label ben_revealed3
+    jump ben_revealed3
 
   scene bg room
 
@@ -576,7 +576,7 @@ label ben_revealed2:
 
   b "Oh, no! What have you done with her, dumb human?"
 
-  r "Hah, when I saw the crystals in you room, I knew that you are dirty. I'm glad that I bring you here."
+  r "Hah, when I saw the crystals in you room, I knew that you are dirty. I'm glad that I brought you here."
 
   p "Ok, buddy, where is Arthur and Duke? Talk, if you don't want to get to Erika's fate!"
 
@@ -590,7 +590,7 @@ label ben_revealed2:
 
   b "We didn't. Ben and Erika gave up and decided to leave the hotel, the city, the moon. They stole Arthur's key, then left. We caught them a few minutes later. Our friends took them with them. They must be in one of our underground mines since then."
   
-  b "The hotel's name was on the key, so we decided to take their place. We closed the door behind us, then saw you talking with Arthur. We had only one gun, so stood no chance against the three of you, so we went to our rooms instead. Cindy came just a few minutes later."
+  b "The hotel's name was on the key, so we decided to take their place. We closed the door behind us, then saw you talking with Arthur. We had only one gun, so stood no chance against the three of you, so we went to our rooms instead."
 
   b "The first night I put some crystal in Cindy's room, just in case. It almost worked, but Phil messed it up for us. In the meantime, Erika shrank Duke, and locked him in the basement."
   
@@ -640,7 +640,7 @@ label ben_revealed3:
 
   r "He is not here, maybe he is still with Cindy. I guess he won't mind if I look around a little."
 
-  r "Wait, he also has some crystals. Did Erika frame him too? Or is he a monster too? Well, if he is, it don't want to face him alone. I have to get Phil first."
+  r "Wait, he also has some crystals. Did Erika frame him too? Or is he a monster too? Well, if he is, I don't want to face him alone. I have to get Phil first."
 
   scene bg room flip
 
@@ -698,11 +698,11 @@ label ben_revealed3:
 
   b "We didn't. Ben and Erika gave up and decided to leave the hotel, the city, the moon. They stole Arthur's key, then left. We caught them a few minutes later. Our friends took them with them. They must be in one of our underground mines since then."
   
-  b "The hotel's name was on the key, so we decided to take their place. We closed the door behind us, then saw you talking with Arthur. We had only one gun, so stood no chance against the three of you, so we went to our rooms instead. Cindy came just a few minutes later."
+  b "The hotel's name was on the key, so we decided to take their place. We closed the door behind us, then saw you talking with Arthur. We had only one gun, so stood no chance against the three of you, so we went to our rooms instead."
 
   b "The first night I put some crystal in Cindy's room, just in case. It almost worked, but Phil messed it up for us. In the meantime, Erika shrank Duke, and locked him in the basement."
   
-  b "The second night I couldn't do anything, again, because of Phil. And it seems Erika chose the wrong target. Arthur is also in the basement now.
+  b "The second night I couldn't do anything, again, because of Phil. And it seems Erika chose the wrong target. Arthur is also in the basement now."
   
   b "Then after Phil neutralized Erika, I took her shrink ray gun, and shrank Phil too. He joined the others in the basement. Here's the key. So... we are good?"
 

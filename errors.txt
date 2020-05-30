@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 431: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Phil, trust me, I am Ruby Ray!"
-                                    ^
+File "game/script.rpy", line 467: end of line expected.
+    jump label ben_revealed3
+               ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri May 29 16:35:16 2020
+Sat May 30 10:57:34 2020
