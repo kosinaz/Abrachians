@@ -464,13 +464,174 @@ label day2:
 
   if target1 == "Cindy" or target2 == "Cindy":
 
+    r "The only room I didn't check is Ben's. I have to give it a try."
+
     jump ben_revealed3
+
+  r "The only rooms I didn't check are Ben's and Cindy's. Which should I check first?"
+
+  menu:
+
+    "Ben":
+
+      jump ben_revealed3
+
+    "Cindy":
+
+      jump day3
+
+label day3:
+
+  scene bg room flip
+
+  show ruby inside at left
+
+  show cindy at right
+
+  with fade
+
+  c "Ruby! What a nice surprise!"
+
+  r "Hey, Cindy! I just came to have a quick look around. We still couldn't find Arthur and Duke, and I thought maybe Erika hid them somewhere in your room, while you were away."
+
+  c "Um, sure, whatever you want."
+
+  scene bg room flip
+
+  show ruby inside at left
+
+  show cindy at right
+
+  with fade
+
+  r "Hm, nothing. Well, then the only room left is Ben's, but it's already too late, I don't want to bother him. I think I just have a sleep now, and try to think outside to box tomorrow."
+
+  c "Good idea. I bet Arthur will be so grateful if you finally find him, he won't mind another day or two."
+
+  r "I hope so. Good night, Cindy."
+
+  c "Good night, Ruby."
 
   scene bg room
 
   show ruby inside at left
 
   with fade
+
+  r "I have no idea where Erika could hide the others. Maybe Phil will come up with something. Too bad we couldn't interrogate her. Well, we'll see, tomorrow."
+
+  scene bg room
+
+  show ruby inside at left
+
+  show ben at right
+
+  with fade
+
+  r "Hi, Ben. What brought you here so early in the morning?"
+
+  b "Phil left the hotel. He said you shouldn't waste more time for two people when a whole city needs help. He said you should keep looking for them in the hotel, while he brings help."
+
+  r "Um, well, that makes sense. A good bye would have been nice though. Ok, let's go then, we have people to find!"
+
+  scene bg room
+
+  show ruby inside at left
+
+  with fade
+
+  r "I spent the whole day looking for them, still nothing. I can't believe it."
+
+  show monster at right
+
+  m "That's surprising knowing how many things you are willing to believe. Well, thanks for giving me another day to recharge my gun. Don't worry, at least you'll see Phil sooner than you thought."
+
+  r "Wait!"
+
+  scene black
+
+  with fade
+
+  "The End"
+
+  # This ends the game.
+
+  return
+
+label erika_revealed:
+
+  e "Ok, that's true. I stole the key because I wanted to leave. But then I changed my mind, and came back. I'm sorry that I let these people in. I'll give back the key, and won't steal it ever again."
+
+  a "Great, but we still has a monster, so I'm not planning to use that key any time soon. Ruby, Phil, I hope you don't mind."
+
+  p "No-no, we also don't want to leave you in trouble."
+
+  a "Thank you! So I think that's all for today. Let's hope for a better tomorrow. Until then, back to your rooms, please!
+
+  scene bg room
+
+  show ruby inside at left
+
+  with fade
+
+  r "Wow, I'm glad that I shared my findings about Erika. Even if he is not a monster, at least we have the key now. Let's see who should I check tonight."
+
+  menu:
+
+    "Arthur":
+
+      $ target2 = "Arthur"
+
+    "Ben":
+
+      $ target2 = "Ben"
+
+    "Cindy":
+
+      $ target2 = "Cindy"
+
+  scene bg room flip
+
+  show ruby inside at left
+
+  with fade
+
+  r "Another open door and another empty room. Let's have a quick look around!"
+
+  if target2 == "Arthur":
+
+    r "A top secret document hidden under the bed about the Zeta-7 crystal locator optimized for locating Abrachian shrink ray crystals. Weird."
+
+   
+  if target2 == "Ben": 
+  
+    r "A few strange crystals behind the toilet. They are covered with a special casing that makes them suitable for loading into a ray gun. Ben is up to no good!"
+
+  if target2 == "Cindy":
+
+    r "Just the crystals, nothing else that would prove that she wasn't framed."
+
+  scene bg room
+
+  show ruby inside at left
+
+  show monster at right
+
+  with fade
+
+  m "You left your door open. What a pity!"
+
+  r "Wait!"
+
+  scene black
+
+  with fade
+
+  "The End"
+
+  # This ends the game.
+
+  return
 
 label ben_revealed:
 
@@ -630,8 +791,6 @@ label ben_revealed2:
 
 label ben_revealed3:
 
-  r "The only room I didn't check is Ben's. I have to give it a try."
-
   scene bg room flip
 
   show ruby inside at left
@@ -650,7 +809,7 @@ label ben_revealed3:
 
   r "Phil, are you in here? Your door was wide open."
 
-  r "His clothes are on the floor but he is nowhere. So Ben is a monster! And he got him. Luckily, I know where Phil hides his gun."
+  r "His clothes are on the floor but he is nowhere. So Ben is a monster! And he got Phil. Luckily, I know where Phil hides his gun."
 
   r "There we go. Now, let's get Cindy, before it's too late."
 
