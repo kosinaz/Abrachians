@@ -566,7 +566,7 @@ label erika_revealed:
 
   p "No-no, we also don't want to leave you in trouble."
 
-  a "Thank you! So I think that's all for today. Let's hope for a better tomorrow. Until then, back to your rooms, please!
+  a "Thank you! So I think that's all for today. Let's hope for a better tomorrow. Until then, back to your rooms, please!"
 
   scene bg room
 
