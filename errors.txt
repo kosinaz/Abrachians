@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 569: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-      a "Thank you! So I think that's all for today. Let's hope for a better tomorrow. Until then, back to your rooms, please!
+File "game/screens.rpy", line 757: The has statement is not allowed here.
+    has vbox
+       ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat May 30 22:13:22 2020
+Wed Jun 03 15:55:54 2020
