@@ -52,7 +52,7 @@ translate hungarian start_3a0e23b5:
 translate hungarian start_d8af4880:
 
     # a "A bunch of shapeshifting monsters attacked the city a few days ago. The mayor ordered strict quarantine while the militia mitigates the problem. His last message was to close all doors and not let anyone in until his next instruction."
-    a "Egy rakás alakváltó szörny megtámadta a várost egy pár napja. A polgármester szigurú karantént rendelt el addig, míg a milícia megoldja a problémát. Az utolsó üzenete az volt, hogy zárjunk be minden ajtót, és senkit ne engedjünk be további utasításig."
+    a "Egy rakás alakváltó szörny megtámadta a várost egy pár napja. A polgármester szigorú karantént rendelt el addig, míg a milícia megoldja a problémát. Az utolsó üzenete az volt, hogy zárjunk be minden ajtót, és senkit ne engedjünk be további utasításig."
 
 # game/script.rpy:87
 translate hungarian start_7cd3274c:
@@ -100,7 +100,8 @@ translate hungarian start_e62d160e:
 translate hungarian start_90a2c020:
 
     # a "One of you stole my key, opened the door, let these in, then locked it again. I don't know if this was supposed to be a bad joke, or a horrible act of a madman, but I highly doubt you would reveal yourself. Still, I give it a try."
-    a "Egyikőtök ellopta a kulcsomat, kinyitotta az ajtót, beengedte ezeket, és végül még be is zárta az ajtót. Nem tudom hogy ez valami rossz vicc akart-e lenni, vagy egy őrült ember szörnyű cselekedete, de erősen kétlem, hogy az illető felfedné most magát előttünk. Most mégis adok neki egy esélyt."
+    a "Egyikőtök ellopta a kulcsomat, kinyitotta az ajtót, beengedte ezeket, és végül még be is zárta az ajtót."
+    a "Nem tudom hogy ez valami rossz vicc akart-e lenni, vagy egy őrült ember szörnyű cselekedete, de erősen kétlem, hogy az illető felfedné most magát előttünk. Most mégis adok neki egy esélyt."
 
 # game/script.rpy:123
 translate hungarian start_fa55a825:
@@ -112,7 +113,7 @@ translate hungarian start_fa55a825:
 translate hungarian start_9e309398:
 
     # a "Since I can't expect you to stay together until we figure out if we need to be afraid of each other, I ask you to do the opposite. Go back to your room, stay there, and don't open your door for anyone until I tell you that it's safe to come out."
-    a "Mivel nem várhatom el tőletek, hogy mindaddig együtt maradjatok, míg kiderül, kell-e egyáltalán félnünk egymástól, ezért épp az ellenkezőjére kérlek titeket. Menjetek vissza a szobátokba, maradjatok ott, és ne nyissátok ki senkinek az ajtót míg nem szólok!"
+    a "Mivel nem várhatom el tőletek, hogy mindaddig együtt maradjatok, míg kiderül, kell-e egyáltalán félnünk egymástól, ezért épp az ellenkezőjére kérlek titeket. Menjetek vissza a szobátokba, maradjatok ott, és senkinek se nyissatok ajtót míg nem szólok!"
 
 # game/script.rpy:127
 translate hungarian start_8df5bbd8:
@@ -124,7 +125,7 @@ translate hungarian start_8df5bbd8:
 translate hungarian start_3344abee:
 
     # a "That's the point. It can be any of us, and you won't know until it's too late. So I think the best is to stay away from everybody. We just need to sit still until the militia comes and rescues us. But if you have a better idea, feel free to share it."
-    a "Épp ez a lényeg. Bármelyikünk lehet az, és addig nem is fogjátok biztosan tudni, míg már túl késő nem lesz. Szóval azt hiszem a legjobb, ha mindenkitől távol tartjátok magatokat. Csak addig kell nyugton maradnunk, míg a milícia meg nem érkezik. De ha van jobb ötletetek..."
+    a "Épp ez a lényeg. Bármelyikünk lehet az, és addig nem is fogjátok tudni, míg már túl késő nem lesz. Szóval jobb, ha mindenkitől távol tartjátok magatokat. Csak addig kell nyugton maradnunk, míg a milícia meg nem érkezik. De ha van jobb ötletetek..."
 
 # game/script.rpy:131
 translate hungarian start_78c582f0:
@@ -166,7 +167,7 @@ translate hungarian start_a2264fd6:
 translate hungarian start_9c06213c:
 
     # r "There you go. Now at least we have a chance to find out if any of these people hides something suspicious in their room. Maybe the key to the front door."
-    r "Meg is van. Most már legalább van esélyünk utána járni, hogy rejteget-e bárki valai gyanúsat a szobájában. Mondjuk a bejárati ajtó kulcsát."
+    r "Meg is van. Most már legalább van esélyünk utána járni, hogy rejteget-e bárki valami gyanúsat a szobájában. Mondjuk a bejárati ajtó kulcsát."
 
 # game/script.rpy:155
 translate hungarian start_a061cf38:
@@ -184,7 +185,7 @@ translate hungarian start_3f86a93c:
 translate hungarian start_b9705885:
 
     # r "[target1] left and didn't even lock the door. Let's have a quick look around! Maybe I can find something interesting."
-    r "[target1] elment és még az ajtaját is nyitva hagyta. Gyorsan körülnézek. Talán találok valami érdekeset."
+    r "[target1] elment és még az ajtaját is nyitva hagyta. Gyorsan körülnézek. Hátha találok valami érdekeset."
 
 # game/script.rpy:197
 translate hungarian start_6ff58f4f:
@@ -280,7 +281,7 @@ translate hungarian start_b758d5e9:
 translate hungarian start_1e65a131:
 
     # r "What has the crystals got to do with the monster?"
-    r "Mi köze a krisályoknak a szörnyeteghez?"
+    r "Mi köze a kristályoknak a szörnyeteghez?"
 
 # game/script.rpy:265
 translate hungarian start_657832f3:
@@ -340,7 +341,7 @@ translate hungarian day2_bcdc4c43:
 translate hungarian day2_54939549:
 
     # r "Just the crystals, nothing else that would prove that she wasn't framed."
-    r "Csak a krisályok. Semmi más, ami azt bizonyítaná, hogy Cindy-t nem csak besározták."
+    r "Csak a kristályok. Semmi más, ami azt bizonyítaná, hogy Cindy-t nem csak besározták."
 
 # game/script.rpy:361
 translate hungarian day2_f1a12598:
@@ -352,7 +353,7 @@ translate hungarian day2_f1a12598:
 translate hungarian day2_3250cb3b:
 
     # r "She still has the key, but no crystals that would show that she might be a monster."
-    r "Még mindig nála van a kulcs, de krisályok nincsenek, amik azt mutatnák, hogy szörnyeteg lenne."
+    r "Még mindig nála van a kulcs, de kristályok nincsenek, amik azt mutatnák, hogy szörnyeteg lenne."
 
 # game/script.rpy:371
 translate hungarian day2_7dcc8f73:
@@ -460,7 +461,7 @@ translate hungarian day2_bc5cd535:
 translate hungarian day2_e3f73158:
 
     # r "Then let's not waste more time. I'll look for them in the rooms upstairs, you start downstairs."
-    r "Éppen ezért ne is vesztegessük tovább az időt. Én kezdem az emeleten a kutatást, de kezd a földszinten."
+    r "Éppen ezért ne is vesztegessük tovább az időt. Én kezdem az emeleten a kutatást, de kezdd a földszinten."
 
 # game/script.rpy:463
 translate hungarian day2_07f4b287:
@@ -574,7 +575,7 @@ translate hungarian day3_97900b32:
 translate hungarian erika_revealed_6251d0b0:
 
     # e "Ok, that's true. I stole the key because I wanted to leave. But then I changed my mind, and came back. I'm sorry that I let these people in. I'll give back the key, and won't steal it ever again."
-    e "Na jó, ez így történt. Elloptam a kulcsot mert meg akartam szökni. De utána meggondoltam magam és visszajöttem. Sajnálom, hogy közben ezek az emberek is bejöttek. Visszaadom a kulcsot, és soha többé nem fogom ellopni."
+    e "Oké, tényleg nálam van. Elloptam a kulcsot mert meg akartam szökni. De utána meggondoltam magam és visszajöttem. Sajnálom, hogy közben ezek az emberek is bejöttek. Visszaadom a kulcsot, és soha többé nem fogom ellopni."
 
 # game/script.rpy:565
 translate hungarian erika_revealed_a5f8627f:
@@ -592,7 +593,7 @@ translate hungarian erika_revealed_ff37497a:
 translate hungarian erika_revealed_9faee126:
 
     # a "Thank you! So I think that's all for today. Let's hope for a better tomorrow. Until then, back to your rooms, please!"
-    a "Köszönöm! Hát akkor azt hiszem már ennyi. Reménykedjünk egy szebb holnapban! Addig pedig vissza a szobátokba, ha szabad kérnem!"
+    a "Köszönöm! Hát akkor azt hiszem mára ennyi. Reménykedjünk egy szebb holnapban! Addig pedig vissza a szobátokba, ha szabad kérnem!"
 
 # game/script.rpy:577
 translate hungarian erika_revealed_5eb204c7:
@@ -622,7 +623,7 @@ translate hungarian erika_revealed_bcdc4c43:
 translate hungarian erika_revealed_54939549:
 
     # r "Just the crystals, nothing else that would prove that she wasn't framed."
-    r "Csak a krisályok. Semmi más, ami azt bizonyítaná, hogy Cindy-t nem csak besározták."
+    r "Csak a kristályok. Semmi más, ami azt bizonyítaná, hogy Cindy-t nem csak besározták."
 
 # game/script.rpy:622
 translate hungarian erika_revealed_449eef5d:
@@ -724,7 +725,7 @@ translate hungarian ben_revealed_6ff58f4f:
 translate hungarian ben_revealed_54939549:
 
     # r "Just the crystals, nothing else that would prove that she wasn't framed."
-    r "Csak a krisályok. Semmi más, ami azt bizonyítaná, hogy Cindy-t nem csak besározták."
+    r "Csak a kristályok. Semmi más, ami azt bizonyítaná, hogy Cindy-t nem csak besározták."
 
 # game/script.rpy:712
 translate hungarian ben_revealed_7dcc8f73:
@@ -760,7 +761,7 @@ translate hungarian ben_revealed2_37c92ef6:
 translate hungarian ben_revealed2_c0be1d0d:
 
     # r "Hah, when I saw the crystals in you room, I knew that you are dirty. I'm glad that I brought you here."
-    r "Háh, mikor megláttam a krisályt a szobádban, tudtam, hogy sáros vagy. Örülök, hogy idehoztalak."
+    r "Háh, mikor megláttam a kristályt a szobádban, tudtam, hogy sáros vagy. Örülök, hogy idehoztalak."
 
 # game/script.rpy:742
 translate hungarian ben_revealed2_c1b9fea1:
@@ -802,13 +803,14 @@ translate hungarian ben_revealed2_87152ae0:
 translate hungarian ben_revealed2_cca6ffe6:
 
     # b "The hotel's name was on the key, so we decided to take their place. We closed the door behind us, then saw you talking with Arthur. We had only one gun, so stood no chance against the three of you, so we went to our rooms instead."
-    b "A hotel neve rajta volt a kulcson, ígyhát úgy döntöttünk, megpróbáljuk átvenni a helyüket. Alig hogy bezártuk az ajtót magunk mögött, megláttunk titeket Arthurral beszélni. Csak egy fegyverünk volt, szóval esélyünk sem volt hármótok ellen, ezért inkább felmentünk a szobánkba."
+    b "A hotel neve rajta volt a kulcson, ígyhát úgy döntöttünk, megpróbáljuk átvenni a helyüket."
+    b "Alíg hogy bezártuk az ajtót magunk mögött, megláttunk titeket Arthurral beszélni. Csak egy fegyverünk volt, szóval esélyünk sem volt hármótok ellen, ezért inkább felmentünk a szobánkba."
 
 # game/script.rpy:756
 translate hungarian ben_revealed2_2a0ac0f7:
 
     # b "The first night I put some crystal in Cindy's room, just in case. It almost worked, but Phil messed it up for us. In the meantime, Erika shrank Duke, and locked him in the basement."
-    b "Az első este elrejtettem pár krisályt Cindy szobájában, hátha lesz értelme. Majdnem be is jött a csel, de Phil elrontotta az egészet. Közben Erika lekicsinyítette Duke-ot, és bezárta a pincébe."
+    b "Az első este elrejtettem pár kristályt Cindy szobájában, hátha lesz értelme. Majdnem be is jött a csel, de Phil elrontotta az egészet. Közben Erika lekicsinyítette Duke-ot, és bezárta a pincébe."
 
 # game/script.rpy:758
 translate hungarian ben_revealed2_6c0c9c5a:
@@ -874,7 +876,7 @@ translate hungarian ben_revealed3_831e09cd:
 translate hungarian ben_revealed3_6534408f:
 
     # r "There we go. Now, let's get Cindy, before it's too late."
-    r "Meg is van. Akkor most irány Cindy, mielőtt még késő lesz."
+    r "Meg is van. Akkor most irány Cindy, mielőtt még késő lenne."
 
 # game/script.rpy:824
 translate hungarian ben_revealed3_e95d7e41:
@@ -886,7 +888,7 @@ translate hungarian ben_revealed3_e95d7e41:
 translate hungarian ben_revealed3_ba578395:
 
     # r "Lock the door! I'll stay with you tonight. Ben is also a monster and got rid of Phil, but he doesn't know that we already know this. Tomorrow we'll take care of him."
-    r "Zárd be az ajtót. Ma este veled maradok. Ben is szörnyeteg és elintézte Philt, de még nem tudja, hogy én már tudok róla. Holnap gondoskodunk róla."
+    r "Zárd be az ajtót! Ma este veled maradok. Ben is szörnyeteg és elintézte Philt, de még nem tudja, hogy én már tudok róla. Holnap gondoskodunk róla."
 
 # game/script.rpy:828
 translate hungarian ben_revealed3_235c9e7e:
@@ -958,13 +960,14 @@ translate hungarian ben_revealed3_87152ae0:
 translate hungarian ben_revealed3_cca6ffe6:
 
     # b "The hotel's name was on the key, so we decided to take their place. We closed the door behind us, then saw you talking with Arthur. We had only one gun, so stood no chance against the three of you, so we went to our rooms instead."
-    b "A hotel neve rajta volt a kulcson, ígyhát úgy döntöttünk, megpróbáljuk átvenni a helyüket. Alig hogy bezártuk az ajtót magunk mögött, megláttunk titeket Arthurral beszélni. Csak egy fegyverünk volt, szóval esélyünk sem volt hármótok ellen, ezért inkább felmentünk a szobánkba."
+    b "A hotel neve rajta volt a kulcson, ígyhát úgy döntöttünk, megpróbáljuk átvenni a helyüket."
+    b "Alíg hogy bezártuk az ajtót magunk mögött, megláttunk titeket Arthurral beszélni. Csak egy fegyverünk volt, szóval esélyünk sem volt hármótok ellen, ezért inkább felmentünk a szobánkba."
 
 # game/script.rpy:862
 translate hungarian ben_revealed3_2a0ac0f7:
 
     # b "The first night I put some crystal in Cindy's room, just in case. It almost worked, but Phil messed it up for us. In the meantime, Erika shrank Duke, and locked him in the basement."
-    b "Az első este elrejtettem pár krisályt Cindy szobájában, hátha lesz értelme. Majdnem be is jött a csel, de Phil elrontotta az egészet. Közben Erika lekicsinyítette Duke-ot, és bezárta a pincébe."
+    b "Az első este elrejtettem pár kristályt Cindy szobájában, hátha lesz értelme. Majdnem be is jött a csel, de Phil elrontotta az egészet. Közben Erika lekicsinyítette Duke-ot, és bezárta a pincébe."
 
 # game/script.rpy:864
 translate hungarian ben_revealed3_28cab363:

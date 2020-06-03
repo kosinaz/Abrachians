@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 757: The has statement is not allowed here.
-    has vbox
-       ^
+File "game/tl/hungarian/script.rpy", line 806: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        b "A hotel neve rajta volt a kulcson, ígyhát úgy döntöttünk, megpróbáljuk átvenni a helyüket. 
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Jun 03 15:55:54 2020
+Wed Jun 03 21:50:54 2020
